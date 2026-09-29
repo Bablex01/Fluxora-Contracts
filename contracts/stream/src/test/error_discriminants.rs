@@ -1198,6 +1198,9 @@ fn pool_balance_drift_discriminant_value() {
         Error::PoolBalanceDrift as u32,
         34,
         "PoolBalanceDrift discriminant must be 34",
+    );
+}
+
 // #34–#38 — contract-level emergency halt (#1818) ---------------------------
 //
 // Driven end-to-end from the public ABI in `test::halt`, which halts a live
