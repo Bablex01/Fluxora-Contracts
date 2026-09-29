@@ -634,8 +634,10 @@ fn describe(e: Error) -> (&'static str, u32, Account) {
         // --- Rebase detection -------------------------------------------------------------------
         Error::PoolBalanceDrift => (
             "PoolBalanceDrift",
-            34,
+            39,
             Account::Reach(super::rebase_drift::drift_error),
+        ),
+
         // --- Contract-level emergency halt (#1818) -------------------------------
         Error::ContractHalted => (
             "ContractHalted",
