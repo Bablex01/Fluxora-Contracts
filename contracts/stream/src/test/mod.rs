@@ -58,6 +58,8 @@ mod cliff;
 // schedule-relative half (issue #1688); this is the opt-out that pausing
 // cannot move. See `docs/KNOWN-LIMITATIONS.md` §7.
 mod cliff_mode;
+// Issue #1824: `delegate_top_up` held to the rejection depth of `top_up`.
+mod delegate_top_up;
 mod delegation;
 // Issue #1845: delegation surviving a recipient transfer.
 mod delegation_transfer;
